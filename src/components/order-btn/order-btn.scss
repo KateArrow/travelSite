@@ -1,0 +1,33 @@
+.order-btn {
+    max-width: 253px;
+    min-height: 60px;
+    width: 100%;
+    border: none;
+    background: $blue;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__text {
+        @include font-source($ralewayRegular, 14px, $white);
+    }
+
+    // mods
+    &_small {
+        min-height: 39px;
+        max-width: 130px;
+        
+        & .order-btn__text {
+
+            @include font-source($openSansBold, 12px);
+        }
+    }
+}

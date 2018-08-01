@@ -1,0 +1,25 @@
+@import '../../comment/comment';
+@import '../../order-form/order-form';
+
+.contact {
+    &__comments {
+        & > div {
+            @include size-xs(12)
+        }
+    }
+
+    min-height: 1170px;
+    background: url('../img/contact-bg.webp') bottom;
+    background-repeat: no-repeat;
+    margin-top: 105px;
+
+    & .caption {
+        margin-bottom: 90px;
+    }
+
+    & .order-form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 142px;
+    }
+}

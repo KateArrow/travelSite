@@ -1,0 +1,78 @@
+.footer {
+    background: linear-gradient(to bottom, #3a4d54 0%,#406770 100%);
+
+    &__wrap-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;        
+    }
+    
+    &__copy {
+
+        @include font-source($openSansRegular, 18px, #78aebe);
+    }
+
+    &__number {
+
+        @include font-source($robotoBlack, 27px, #7ec4d6);        
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        transition: all .3s;
+
+        &:first-child {
+            background: $bluePast;
+
+            &:hover {
+                background: $white;
+
+                & svg {
+                    fill: $bluePast;                
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background: $blueFb;
+
+            &:hover {
+                background: $white;
+
+                & svg {
+                    fill: $blueFb;                
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            background: $blueVk;
+            margin-right: 0;
+
+            &:hover {
+                background: $white;
+
+                & svg {
+                    fill: $blueVk;                
+                }
+            }
+        }
+    }
+
+    &__social-icon-svg {
+        width: 17px;
+        height: 17px;
+        fill: $white;
+        transition: all .3s;
+    }
+}

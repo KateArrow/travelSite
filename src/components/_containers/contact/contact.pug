@@ -1,0 +1,34 @@
+include ../../caption/caption
+include ../../comment/comment
+include ../../order-form/order-form
+
+.contact
+    .container
+        .row-flex
+            .col-12
+                +caption('our Clients say', 'comments')
+    .container
+        .row-flex.contact__comments    
+            .col-6
+                +comment(
+                    `
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do  enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex 
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    `, 'person-1.webp', 'Pavliv Yaroslav', 'Web designer'
+                )
+            .col-6
+                +comment(
+                    `
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do  enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex 
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    `, 'person-2.webp', 'John Scott', 'The Fringe'
+                )
+    .container
+        .row-flex
+            .col-12
+                +order-form('CONTACTS', 'Sign up for our newsletter to receive updates', 'send', 'contact')
+                                

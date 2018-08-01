@@ -1,0 +1,94 @@
+.price-item {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 383px;
+    box-sizing: border-box;                        
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    &:hover {
+        & .price-item__star {
+            fill: $blue;
+        }    
+
+        & .price-item__new-price {
+            color: $blue;
+        }
+    }
+
+    &__stars {
+        padding: 15px 23px 0;
+        
+        & .price-item__star {
+            fill: $white;
+            width: 15px;
+            height: 15px;
+
+            &:nth-child(1) {
+                transition: all .3s;                        
+            }
+
+            &:nth-child(2) {
+                transition: all .5s;                        
+            }
+
+            &:nth-child(3) {
+                transition: all .7s;                        
+            }
+
+            &:nth-child(4) {
+                transition: all .9s;                        
+            }
+
+            &:nth-child(5) {
+                transition: all 1.1s;                        
+            }
+        }
+    }
+
+    &__header {
+        padding: 0 20px 0;
+        margin-top: 121px;
+        margin-bottom: 16px;
+
+        @include font-source($openSansRegular, 28px, $white);
+    }
+
+    &__description {
+        padding: 0 10px 0 21px;
+
+        @include font-source($openSansRegular, 16px, $white, false, 1.3);        
+    }
+
+    &__footer {
+        padding: 0 9px 0 21px; 
+        background: rgba(#000000, .7);
+        margin-top: auto;
+        display: flex;
+        min-height: 62px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__old-price {
+        text-decoration: line-through;
+
+        @include font-source($openSansRegular, 18px, $white);                
+        
+        &::after {
+            content: '$';
+        }
+    }
+
+    &__new-price {
+        transition: all .3s;
+
+        @include font-source($openSansExtraBold, 26px, $white);                        
+        
+        &::before {
+            content: '$';
+        }
+    }
+}

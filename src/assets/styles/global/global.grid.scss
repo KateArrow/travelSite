@@ -1,0 +1,69 @@
+@import "smartgrid";
+
+.container {
+  @include wrapper();
+}
+
+.row-flex {
+  @include row-flex();
+}
+
+.col-1 {
+  @include col();
+  @include size(1);
+}
+
+.col-2 {
+  @include col();
+  @include size(2);
+}
+
+.col-3 {
+  @include col();
+  @include size(3);
+}
+
+.col-4 {
+  @include col();
+  @include size(4);
+}
+
+.col-5 {
+  @include col();
+  @include size(5);
+}
+
+.col-6 {
+  @include col();
+  @include size(6);
+}
+
+.col-7 {
+  @include col();
+  @include size(7);
+}
+
+.col-8 {
+  @include col();
+  @include size(8);
+}
+
+.col-9 {
+  @include col();
+  @include size(9);
+}
+
+.col-10 {
+  @include col();
+  @include size(10);
+}
+
+.col-11 {
+  @include col();
+  @include size(11);
+}
+
+.col-12 {
+  @include col();
+  @include size(12);
+}

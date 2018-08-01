@@ -1,0 +1,18 @@
+include ../../hard-item/hard-item
+include ../../caption/caption
+
+.work
+    .container
+        .row-flex
+            .col-12
+                +caption('HOW WE WORK', 'work')
+    .container
+        .row-flex.work__hard-items
+            .col-3
+                +hard-item('1', 'list', `Lorem ipsum dolor sit`, ` amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt`)
+            .col-3
+                +hard-item('2', 'group', `Lorem ipsum dolor sit`, ` amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt`)
+            .col-3
+                +hard-item('3', 'open-book', `Lorem ipsum dolor sit`, ` amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt`)
+            .col-3
+                +hard-item('4', 'checked', `Lorem ipsum dolor sit`, ` amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt`)

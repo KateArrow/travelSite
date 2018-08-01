@@ -1,0 +1,21 @@
+.rect-btn {
+    text-transform: uppercase;
+    border: 3px solid $blue;
+    background: transparent;
+    width: 100%;
+    max-width: 153px;
+    min-height: 46px;
+    letter-spacing: 2px;
+    margin-left: auto;
+    display: block;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @include font-source($ralewayBold, 12px, $blue);    
+}

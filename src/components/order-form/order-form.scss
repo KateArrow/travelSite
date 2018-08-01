@@ -1,0 +1,82 @@
+.order-form {
+    min-height: 495px;
+    max-width: 512px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba($greyDarkPast, .3);
+
+    &__header {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 33px;
+        width: calc(100% - 60px);
+
+        @include font-source($openSansBold, 36px, $blue);
+    }
+
+    &__desc {
+        margin-top: 7px;
+        margin-bottom: 34px;
+        text-align: center;
+        width: calc(100% - 60px);
+
+        @include font-source($openSansRegular, 16px, $darkHalfBlue);        
+    }
+
+    &__form {
+        z-index: 999;
+        width: calc(100% - 60px);
+    }
+
+    &__input {
+        border-radius: 3px;
+        border: none;
+        height: 60px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 22px;
+        padding-left: 17px;
+
+        @include font-source($robotoRegular, 18px, $greyClean);            
+        
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            @include font-source($robotoRegular, 18px, $greyClean);            
+        }
+
+        &:focus::placeholder {
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+        }
+    }
+
+    &__sbm {
+        border: none;
+        background: $blue;
+        width: 100%;
+        border-radius: 3px;
+        text-transform: uppercase;
+        height: 64px;
+        letter-spacing: 3px;
+        transition: all .3s;
+        
+        @include font-source($openSansBold, 16px, $white);
+
+        &:hover {
+            cursor: pointer;
+            background: $lightBlue;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

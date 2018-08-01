@@ -1,0 +1,49 @@
+html {
+  font-size: $main-fz;
+}
+
+@media screen and (max-width: 1200px) {
+  $main-fz: 15px;
+  html {
+    font-size: $main-fz;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  $main-fz: 14px;
+  html {
+    font-size: $main-fz;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  $main-fz: 13px;
+  html {
+    font-size: $main-fz;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  $main-fz: 12px;
+  html {
+    font-size: $main-fz;
+  }
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,9 @@
+mixin hard-item(number, icon, header, desc)
+    .hard-item
+        .hard-item__number-wrap
+            .hard-item__number #{number}
+        .hard-item__circle
+            +svg-icon('diamond', 'hard-item__icon-diamond')    
+            +svg-icon(icon, 'hard-item__icon-item')
+        .hard-item__header #{header}    
+        .hard-item__desc #{desc}

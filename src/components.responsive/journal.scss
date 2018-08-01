@@ -1,0 +1,138 @@
+@media screen and (max-width: 960px) {
+    .journal {
+        &__blue-text {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        &__item-wrap {
+            box-shadow: none;
+
+            & > div {
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: center;
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(odd) {
+                    width: 40%;
+                }
+
+                &:nth-child(even) {
+                    width: 60%;
+                    box-sizing: border-box;                    
+                    border-right: 1px solid $greyMostLight;
+                    border-top: 1px solid $greyMostLight;
+                    border-bottom: 1px solid $greyMostLight;
+                }
+
+                & .journal__item {
+                    & .journal__triagle {
+                        display: none !important;
+                    }
+                }  
+            }
+        }
+
+        &__item {
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &_picture {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+}    
+
+@media screen and (max-width: 780px) {
+    .journal {
+        margin-top: 100px;
+
+        &__item {
+            min-height : 200px;
+            height: initial;
+        }
+
+        &__blue-text {
+            padding-top: 20px;
+        }
+
+        &__number-text {
+            padding-bottom: 20px;
+        }
+    }
+}    
+
+@media screen and (max-width: 560px) {
+    .journal {
+        margin-top: 100px;
+
+        &__item-wrap {
+            margin-bottom: 30px;
+
+            & > div {
+                margin-bottom: 50px;
+
+                &:nth-child(odd), &:nth-child(even) {
+                    width: 100%;
+                }
+
+                &:first-child, &:nth-child(3), &:nth-child(5) {                
+                    margin-bottom: 0;
+                    
+                    .journal__item {
+                        background: none;   
+                        height: initial;
+                        width: initial;
+                        padding: 0;
+                        min-height: initial;      
+                    }
+                }
+
+                &:nth-child(even) {
+                    border: none;
+                }
+
+                &:last-child {
+                    .journal__item:not(.journal__item_picture) {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+
+        &__item {
+            min-height : 200px;
+            height: initial;
+            padding-left: 0;
+            padding-right: 0;
+            
+            &:not(.journal__item_picture) {
+                border-bottom: 1px solid rgba($greyPastLight, .2);
+            }
+        }
+
+        &__item.journal__item_picture {
+            & svg {
+                fill: $blue;
+            }
+        }
+
+        &__blue-text {
+            padding-top: 30px;
+        }
+
+        &__number-text {
+            padding-bottom: 20px;
+        }
+    }
+}   

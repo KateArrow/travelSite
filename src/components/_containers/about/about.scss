@@ -1,0 +1,58 @@
+@import "../../describe/describe";
+
+.about {
+    background-color: $whiteHalf;    
+    min-height: 662px;
+    
+    &__items {
+        & > div {
+            @include size-sm(12);
+        }
+    }
+
+    & .container {
+        background: url("../img/map.webp");       
+        background-position: 91px 20px;
+        background-repeat: no-repeat; 
+    }
+
+    & .describe {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    &__describe {
+        margin-top: 246px;
+    }
+    
+    &__photos {
+        position: relative;
+    }
+
+    &__big-photo {
+        background: url("../img/big-photo.webp");
+        width: 806px;
+        height: 570px;
+        margin-left: -54px;
+        margin-top: -40px;
+    }
+
+    &__small-photo {
+        width: 350px;
+        height: 350px;
+        background: url("../img/small-photo.webp");
+        position: absolute;
+        top: 314px;
+        left: -144px;
+    }
+
+    & .order-btn {
+        transition: all .3s;
+
+        &:hover {
+            background: $lightBlue;
+        }
+    }
+}
+

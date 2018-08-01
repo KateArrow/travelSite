@@ -1,0 +1,67 @@
+/*Fonts*/
+$main-fz: 16px;
+
+$bringin: "Bringin";
+$leagueGothicRegular: "LeagueGothicRegular";
+$openSansBold: "OpenSansBold";
+$openSansExtraBold: "OpenSansExtraBold";
+$openSansLight: "OpenSansLight";
+$openSansRegular: "OpenSansRegular";
+$robotoLight: "RobotoLight";
+$robotoRegular: "RobotoRegular";
+$ralewayBold: "RalewayBold";
+$ralewayRegular: "RalewayRegular";
+$timesNewRomanRegular: 'TimesNewRomanRegular';
+$robotoBlack: 'RobotoBlack';
+
+/* Colors */
+$blue: #36aeea;
+$halfBlue: #16b5ef;
+$lightBlue: #56c7ff;
+$bluePast: #29c5f6;
+$blueFb: #6788ce;
+$blueVk: #54769a;
+$darkBlue: #2c2e37;
+$darkHalfBlue: #383e4a;
+$white: #ffffff;
+$whiteHalf: #f6f4f4;
+$grey: #95a5ad;
+$lightGrey: #9daeb6;
+$lightHalfGrey: #848484;
+$darkGrey: #949494;
+$halfGrey: #ebebeb;
+$greyPast: #f8f9fa;
+$greyPastLight: #cbcccd;
+$greyMostLight: #f0f3f6;
+$greyDarkPast: #bcbcbc;
+$darkHalfGrey: #777777;
+$black: #212121;
+$blackPast: #404041;
+$greyClean: #cccccc;
+
+/*Grid and media variables*/
+$breakpoints: (
+  // Mobile
+    "320" : 320px,
+    "360" : 360px,
+    "375" : 375px,
+    "400" : 400px,
+    "480" : 480px,
+    "560" : 560px,
+    "640" : 640px,
+    "768" : 768px,
+    "800" : 800px,
+    "992" : 992px,
+
+  // Desktop
+    "1024": 1024px,
+    "1200": 1200px,
+    "1280": 1280px,
+    "1360": 1360px,
+    "1366": 1366px,
+    "1440": 1440px,
+    "1536": 1536px,
+    "1600": 1600px,
+    "1680": 1680px,
+    "1920": 1920px
+);

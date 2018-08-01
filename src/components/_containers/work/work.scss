@@ -1,0 +1,77 @@
+@import '../../hard-item/hard-item';
+
+.work {
+    margin-top: 108px;
+
+    & .caption {
+        margin-bottom: 70px;
+    }
+
+    &__hard-items {
+        & > div {
+            @include size-md(6);
+            @include size-xs(12);
+        }
+
+        & > div:first-child {
+            & .hard-item {
+                &__number-wrap {
+                    &::before {
+                        content: '';
+                        display: block;
+                        right: 0;
+                        width: 0;
+                        height: 2px;
+                        background: url(../img/horizontal-line.webp);
+                        position: absolute;
+                        z-index: -1;
+                    }
+                }
+            }
+        }     
+
+        & > div:nth-child(4) {
+            & .hard-item {
+                &__number-wrap {
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 100px;
+                        height: 2px;
+                        background: $white;
+                        position: absolute;
+                        z-index: -1;
+                        right: -80px;
+                    }
+                }
+            }
+        }
+        & .hard-item {
+            margin-left: auto;
+            margin-right: auto;
+
+            &:hover {
+                cursor: pointer;
+
+                & .hard-item__number-wrap {
+                    background: $lightBlue;
+                    transition: all .5s;
+                    
+                }
+
+                & .hard-item__number {
+                    color: $white;
+                    transition: all .5s;                        
+                    background: $blue;
+                }
+
+                & .hard-item__circle {                        
+                    & .hard-item__icon-item {
+                        fill: $blue;
+                        transition: all .5s;                                                                            
+                    }
+                }
+            }
+        }
+    }
+}

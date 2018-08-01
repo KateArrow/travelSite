@@ -1,0 +1,28 @@
+.describe {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/waves-copy.webp');
+        width: 85px;
+        height: 7px;
+        background-repeat: no-repeat;
+        top: -46px;
+        position: absolute;
+    }
+
+    &__header {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 21px;
+
+        @include font-source($openSansBold, 20px, $darkBlue);
+    }
+
+    &__desc {
+        line-height: 1.8;
+
+        @include font-source($openSansRegular, 14px, $darkGrey);
+    }
+}

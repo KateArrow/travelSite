@@ -1,0 +1,50 @@
+include ../../caption/caption
+include ../../price-item/price-item
+
+.travel
+    .container
+        .row-flex
+            .col-12
+                +caption('TRAVEL WITH US', 'services')
+    .container
+        .row-flex.travel__price-row
+            div
+                +price-item(
+                    5, 
+                    'Carpathian', 
+                    `Lorem ipsum dolor si amet veniam. ipsum`, 
+                    '3150', 
+                    '793'
+                )
+            div
+                +price-item(
+                    5, 
+                    'Alps', 
+                    `Lorem ipsum dolor si amet, consectetur`, 
+                    '3150', 
+                    '1893'
+                )    
+            div
+                +price-item(
+                    5, 
+                    'Pyrenees', 
+                    `Lorem ipsum dolor si amet, consectetur adip`, 
+                    '3150', 
+                    '2593'
+                )
+            div
+                +price-item(
+                    5, 
+                    'Rocky', 
+                    `Lorem ipsum dolor si amet, consectetur`, 
+                    '3150', 
+                    '2123'
+                )        
+            div
+                +price-item(
+                    3, 
+                    'Kavkaz', 
+                    `Lorem ipsum dolor si amet, consectetur`, 
+                    '3150', 
+                    '593'
+                )      

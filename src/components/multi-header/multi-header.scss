@@ -1,0 +1,19 @@
+.multi-header {
+    &__white {
+
+
+        @include font-source($openSansBold, 50px, $white);
+    }
+
+    &__blue {
+
+
+        @include font-source($bringin, 66px, $lightBlue);
+    }
+
+    &__desc {
+        
+
+        @include font-source($openSansRegular, 18px, $white);
+    }
+}

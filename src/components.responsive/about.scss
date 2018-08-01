@@ -1,0 +1,117 @@
+@media screen and (max-width: 1550px) {
+    .about {
+        &__big-photo {
+            width: calc(100% + 100px);
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+        &__big-photo {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &__small-photo {
+            top: 248px;
+            left: -31px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        &__small-photo  {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about {
+        &__small-photo  {
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            top: 189px;
+            left: 103px;
+            display: block;
+        }
+
+        &__big-photo {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            height: 480px;
+        }
+
+        &__describe {
+            margin-top: 90px;
+
+            & .describe {
+                margin-left: auto;
+                margin-right: auto;
+
+                &__header, &__desc {
+                    text-align: center;
+                }
+
+                &::after {
+                    content: '';
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            & .order-btn {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about {
+        &__small-photo  {
+            display: none;
+        }
+
+        &__big-photo {
+            height: 400px;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about {
+        min-height: 300px;
+
+        &__big-photo {
+            height: 240px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .about {
+        &__big-photo {
+           margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about {
+        &__big-photo {
+            height: 220px;
+        }
+    }
+}

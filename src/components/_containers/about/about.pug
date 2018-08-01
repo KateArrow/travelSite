@@ -1,0 +1,15 @@
+.about
+    .container
+       .row-flex.about__items
+            .col-6
+                .about__describe
+                    include ../../describe/describe
+                    +describe('ABOUT US', `Aliquam sed posuere urna, et gravida nisl. Praesent 
+                                interdum nisl libero, pretium egestas purus eleifend 
+                                vitae. Mauris suscipit vel lectus at luctus.`, 'about')
+                    include ../../order-btn/order-btn
+                    +order-btn('read more', 'order-btn_small')
+            .col-6  
+                .about__photos
+                    .about__big-photo
+                    .about__small-photo

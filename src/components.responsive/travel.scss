@@ -1,0 +1,56 @@
+@media screen and (max-width: 1200px) {
+    .travel {
+        min-height: 1400px;
+        
+        &__price-row {
+            & > div {
+                width: 33.3333%;
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    width: 50%;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .travel {
+        background: none;
+        min-height: 1400px;
+
+        & .price-item {
+            box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        }
+        &__price-row {
+            & > div {
+                width: 50%;
+                margin-bottom: 50px;
+                margin-top: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .travel {
+        &__price-row {
+            & > div {
+                width: 100%;
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    width: 100%;                    
+                }
+            }
+        }
+    }
+}

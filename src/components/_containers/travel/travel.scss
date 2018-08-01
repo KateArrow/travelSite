@@ -1,0 +1,63 @@
+@import '../../price-item/price-item';
+
+.travel {
+    margin-top: 100px;
+    padding-top: 36px;
+    background: url('../img/worldmap-dots.webp') 132px 19px,url('../img/travel-bg.webp') bottom;
+    background-repeat: no-repeat;
+    min-height: 985px;
+    transition: all .3s;
+
+    & .caption {
+        margin-bottom: 90px;
+    }
+
+    &__price-row {
+        justify-content: space-between;
+
+        & > div {
+            & .price-item {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        & > div:first-child {
+            & .price-item {                
+                background: url('../img/price-1.webp');
+                background-size: cover;  
+                background-position-x: -20px;
+            }
+        }
+
+
+        & > div:nth-child(2) {
+            & .price-item {
+                background: url('../img/price-2.webp');
+                background-size: cover;  
+            }
+        }
+
+
+        & > div:nth-child(3) {
+            & .price-item {
+                background: url('../img/price-3.webp');
+                background-size: cover;  
+            }
+        }
+
+        & > div:nth-child(4) {
+            & .price-item {
+                background: url('../img/price-4.webp');
+                background-size: cover;  
+            }
+        }
+
+        & > div:nth-child(5) {
+            & .price-item {
+                background: url('../img/price-5.webp');
+                background-size: cover;  
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+mixin order-form(header, desc, btnName, id, mods)
+    .order-form(id=id)
+        .order-form__header #{header}
+        .order-form__desc #{desc}
+        form.order-form__form(action="form.php" method="post")
+            input.order-form__input(type="text" placeholder="Name")
+            input.order-form__input(type="phone" placeholder="Phone")
+            input.order-form__input(type="email" placeholder="Email")
+            button.order-form__sbm #{btnName}
+        .order-form__blur    

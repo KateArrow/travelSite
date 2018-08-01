@@ -1,0 +1,44 @@
+@import '../../describe/describe';
+@import '../../form-horiz/form-horiz';
+
+.wanna {
+    background: url(../img/tree.webp) 129% bottom,url(../img/mount.webp) bottom;
+    height: 653px;
+    background-repeat: no-repeat;
+    background-size: auto, 100%;
+    background-color: $whiteHalf;
+    
+    &__warn {
+        display: flex;
+        margin-top: 18px;
+
+        & svg {
+            fill: $blue;
+            width: 14px;
+            height: 16px;
+            margin-right: 12px;
+        }
+    }
+
+    &__warn-text  {
+
+        @include font-source($openSansRegular, 14px, $blue);
+    }
+
+    &__describe {
+        margin-top: 192px;
+        max-width: 700px;
+
+        & .describe {
+            margin-bottom: 25px;
+
+            &__desc {
+                font-size: 16px;
+            }
+
+            &__header {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

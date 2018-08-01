@@ -1,0 +1,17 @@
+@media screen and (max-width: 780px) {
+    .sponsors {
+        &__set {
+            & > div {
+                flex-wrap: wrap;
+                
+            }
+        }
+
+        &__item {
+            width: 33.33333%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

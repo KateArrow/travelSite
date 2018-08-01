@@ -1,0 +1,131 @@
+/* Libs */
+@import "../libs/normalize-css/normalize.css";
+
+/* Base */
+@import "./global.style";
+
+/* Containers */
+@import "../../components/_containers/header/header";
+@import "../../components/_containers/about/about";
+@import "../../components/_containers/journal/journal";
+@import "../../components/_containers/wanna/wanna";
+@import "../../components/_containers/work/work";
+@import "../../components/_containers/travel/travel";
+@import "../../components/_containers/gallery/gallery";
+@import "../../components/_containers/sponsors/sponsors";
+@import "../../components/_containers/contact/contact";
+@import "../../components/_containers/footer/footer";
+
+/* Responsive Containers */
+@import "../../components.responsive/header";
+@import "../../components.responsive/about";
+@import "../../components.responsive/travel";
+@import "../../components.responsive/journal";
+@import "../../components.responsive/wanna";
+@import "../../components.responsive/work";
+@import "../../components.responsive/sponsors";
+@import "../../components.responsive/contact";
+@import "../../components.responsive/footer";
+@import "../../components.responsive/gallery";
+
+@media screen and (min-width: 1200px) {
+    .header__btns-wrap .rect-btn {
+        transform: translateY(-100px);
+    }
+
+    .header__menu  {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    .menu__link {
+        opacity: 0;
+    }
+
+    .header__rect {
+        opacity: 0;        
+    }
+
+    .multi-header {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    
+    .header__rect .order-btn {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    .about__big-photo {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .about__small-photo {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .about__describe {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    .wanna__describe {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    .journal__header {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .journal__item-wrap > div {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .journal__item-wrap_shadow {
+        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);   
+    }
+
+    .hard-item__number-wrap {
+        opacity: 0;
+    }
+
+    .hard-item__circle {
+        opacity: 0;
+        transform: scale(0);  
+    }
+
+    .hard-item__header, .hard-item__desc {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    .work .caption__text, .travel .caption__text {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.row-flex.work__hard-items > .col-3:nth-child(1) > div:first-child > .hard-item__number-wrap::after {
+    height: 0;
+    bottom: 0;
+}
+
+.row-flex.work__hard-items > .col-3:nth-child(2) > div:first-child > .hard-item__number-wrap::after {
+    height: 0;
+    bottom: 0;
+}
+
+.row-flex.work__hard-items > .col-3:nth-child(3) > div:first-child > .hard-item__number-wrap::after {
+    height: 0;
+    bottom: 0;
+}
+
+.row-flex.work__hard-items > .col-3:nth-child(4) > div:first-child > .hard-item__number-wrap::after {
+    height: 0;
+    bottom: 0;
+}

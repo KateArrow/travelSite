@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    height: 100%;
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        padding-bottom: 6px;
+
+        @include font-source($openSansBold, 12px, $lightGrey);        
+        
+        &:hover {
+            border-bottom: 2px solid $blue;
+        }
+    }
+}

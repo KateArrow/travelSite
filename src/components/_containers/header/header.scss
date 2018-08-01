@@ -1,0 +1,107 @@
+@import "../../logo/logo";
+@import "../../menu/menu";
+@import "../../rect-btn/rect-btn";
+@import "../../multi-header/multi-header";
+@import "../../order-btn/order-btn";
+
+.header {
+    background: url("../img/header-fon.webp");
+    background-size: cover;
+    
+    &__btns-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-icon {
+        height: 46px;
+        width: 46px;
+        fill: $darkGrey;
+        margin-left: auto;
+        display: none;
+        transition: all .3s;
+
+        &_active {
+            fill: $blue;
+        }
+    }
+
+    &__menu-items > div {
+        &:nth-child(2) {
+            @include col();
+            @include size-md(12);
+        }
+
+        &:nth-child(3) {
+            @include col();
+            @include size-md(10);
+        }
+    }
+
+    &__menu {
+        padding-top: 22px;
+        background: rgba($white, .5);
+        padding-bottom: 23px;
+    }
+
+    &__rect {
+        border: 3px solid $white;
+        margin-top: 130px;
+        padding-top: 29px;
+        padding-left: 19px;
+        margin-bottom: 134px;
+        box-sizing: border-box;
+    }
+
+    & .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: all .3s;
+
+        &:hover {
+            .logo__text {
+                color: $blue;
+            }
+        }
+    }
+
+    & .menu {
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    & .rect-btn {
+        border-radius: 4px;
+        transition: all .3s;
+        
+        &:hover {
+            background: $blue;
+            border: 3px solid $blue;
+            color: $white;
+        }
+    }
+
+    & .multi-header {
+        max-width: 560px;
+        margin-bottom: 25px;
+
+        &__white {
+            letter-spacing: 6px;
+        }
+
+        &__desc {
+            width: calc(100% - 100px);
+            line-height: 1.5;
+        }
+    }
+
+    & .order-btn {
+        margin-bottom: 42px;
+        transition: all .3s;
+
+        &:hover {
+            background: $lightBlue;
+        }
+    }
+}

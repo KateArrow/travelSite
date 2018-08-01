@@ -1,0 +1,29 @@
+.sponsors {
+    margin-top: 80px;
+    
+    &__set {
+        background-color: $greyPast;
+        
+        & > div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 180px;            
+        }
+    }
+
+    &__item {
+        
+    }
+
+    &__svg-item {
+        fill: $greyPastLight;
+        height: 32px;
+        width: 60px;
+        transition: all .3s;
+        
+        &:hover {
+            fill: $blue;
+        }
+    }
+}

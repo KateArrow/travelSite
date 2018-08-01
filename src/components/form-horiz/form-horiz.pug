@@ -1,0 +1,7 @@
+mixin form-horiz(place1, place2, sbm)
+    form.form-horiz(action="form.php" method="post")
+        input.form-horiz__input(type="text" placeholder=place1 )
+        .form-horiz__line
+        input.form-horiz__input(type="text" placeholder=place2 )
+        .form-horiz__sbm-wrap
+            button.form-horiz__sbm #{sbm}

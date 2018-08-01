@@ -1,0 +1,25 @@
+include ../assets/templates/mixins.pug
+doctype html
+html(lang="ru")
+    +head("title", "./css/style.css")
+    body
+        include ../components/_containers/header/header
+        include ../components/_containers/about/about
+        include ../components/_containers/journal/journal
+        include ../components/_containers/wanna/wanna
+        include ../components/_containers/work/work
+        include ../components/_containers/travel/travel
+        include ../components/_containers/gallery/gallery
+        include ../components/_containers/sponsors/sponsors
+        include ../components/_containers/contact/contact
+        include ../components/_containers/footer/footer
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSRulePlugin.min.js"></script>
+
+        script(src="js/main.js")

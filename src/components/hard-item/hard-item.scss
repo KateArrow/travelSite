@@ -1,0 +1,83 @@
+.hard-item {
+    max-width: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__number-wrap {
+        background: $blue;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -70px;
+            display: block;
+            height: 77px;
+            width: 2px;
+            z-index: -1;
+            background: url(../img/vertical-line.webp);
+        }
+    }
+
+    &__number {
+        width: 42px;
+        height: 42px;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+        @include font-source($robotoBlack, 16px, $blue);
+    }
+
+    &__circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: $greyMostLight;
+        position: relative;
+        margin-top: 58px;
+        margin-bottom: 26px;
+
+        & > svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        & .hard-item__icon-diamond {
+            width: 125px;
+            height: 125px;
+            fill: $white;
+        }
+
+        & .hard-item__icon-item {
+            fill: $blackPast;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    &__header {
+        text-align: center;
+
+        @include font-source($robotoBlack, 18px, $darkBlue);
+    }
+
+    &__desc {
+        text-align: center;
+        margin-top: 4px;
+
+        @include font-source($robotoLight, 16px, $darkGrey, false, 1.5);
+    }
+}

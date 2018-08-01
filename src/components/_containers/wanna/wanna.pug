@@ -1,0 +1,14 @@
+.wanna
+    .container
+        .row-flex
+            .col-12
+                .wanna__describe
+                    include ../../describe/describe
+                    +describe('DO YOU WANNA GO?', `Aliquam sed posuere urna, et gravida nisl. Praesent
+                                                    interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.`)
+                .wanna__form
+                    include ../../form-horiz/form-horiz
+                    +form-horiz('Your name:', 'Your phone:', 'ORDER NOW')
+                    .wanna__warn 
+                        +svg-icon('locked', 'wanna__warn-svg')
+                        .wanna__warn-text * Your data will not be transferred

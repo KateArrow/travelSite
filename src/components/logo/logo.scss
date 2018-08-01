@@ -1,0 +1,9 @@
+.logo {
+    &__text {
+        @include font-source($bringin, 28px, $grey);
+        
+        &_blue {
+            color: $blue;
+        }
+    }
+}

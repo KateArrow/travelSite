@@ -1,0 +1,12 @@
+mixin price-item(countStars, header, desc, oldPrice, newPrice)
+    a.price-item(href="#")
+        .price-item__stars
+            -var i = 0;
+            while i < countStars 
+                +svg-icon('star', 'price-item__star')
+                -i++
+        .price-item__header #{header}                                                                                                                                                                                                                                                                                                                                                                                               
+        .price-item__description #{desc}
+        .price-item__footer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+            .price-item__old-price #{oldPrice}
+            .price-item__new-price #{newPrice}                                                                                                                                                                                                                                                                                                                                                  

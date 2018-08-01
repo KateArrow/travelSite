@@ -1,0 +1,48 @@
+.comment {
+    position: relative;
+    
+    &__icon {
+        width: 25px;
+        height: 25px;
+        fill: $greyDarkPast;
+    }
+
+    &__text {
+
+        @include font-source($openSansRegular, 18px, $greyDarkPast, false, 1.8);
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+
+        &:hover {
+            & .comment__name {
+                transition: all .3s;                
+                color: $lightBlue;
+            }
+        }
+    }
+
+    &__person-text {
+        display: flex;
+    }
+
+    &__photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-right: 23px;
+    }
+
+    &__name {
+        margin-right: 3px;
+
+        @include font-source($openSansBold, 16px, $blue);
+    }
+
+    &__pos {
+        @include font-source($openSansLight, 16px, $blue);
+    }
+}

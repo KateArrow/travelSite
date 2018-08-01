@@ -1,0 +1,48 @@
+@media screen and (max-width: 780px) {
+    .contact {
+        & .caption {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .contact {
+        background-position-y: 450px;
+        
+        & .order-form {
+            min-height: 460px;
+            margin-top: 50px;
+
+            &__form {
+                width: calc(100% - 30px);
+            }
+        }
+
+        &__comments {
+            & > div:first-child {
+                margin-bottom: 50px;
+            }
+        }
+
+        & .comment {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            &__icon {
+                display: none;
+            }
+
+            &__person {
+                flex-direction: column;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+            &__photo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

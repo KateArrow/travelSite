@@ -1,0 +1,25 @@
+header.header
+    .header__menu
+        .container
+            .row-flex.header__menu-items
+                .col-2
+                    include ../../logo/logo
+                    +logo('Moun', 'tains')
+                .col-8
+                    include ../../menu/menu
+                .col-2    
+                    .header__btns-wrap
+                        include ../../rect-btn/rect-btn
+                        +rect-btn('call us')
+                        +svg-icon('menu', 'header__menu-icon')
+    .container
+         .row-flex
+            .col-12
+                .header__rect
+                    include ../../multi-header/multi-header
+                    +multi-header('TRAVEL WITH US', 'to the Mountains', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid')
+                    
+                    include ../../order-btn/order-btn
+                    +order-btn('ORDER NOW')
+                                   
+                              

@@ -1,0 +1,152 @@
+@media screen and (max-width: 1030px) {
+    .work {
+        &__hard-items {
+            & > div {
+                &:first-child {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                right: -717px;
+                                width: 747px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                right: -55px;
+                                width: 64px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .work {
+        &__hard-items {
+            & > div {
+                &:first-child, &:nth-child(3) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                right: -429px;
+                                width: 451px;
+                                content: '';
+                                display: block;
+                                height: 2px;
+                                background: url(../img/horizontal-line.webp);
+                                position: absolute;
+                                z-index: -2;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2), &:nth-child(4) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 100px;
+                                height: 5px;
+                                background: $white;
+                                position: absolute;
+                                right: -80px;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .work {
+        &__hard-items {
+            & > div {
+                &:first-child, &:nth-child(3) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                right: -309px;
+                                width: 316px;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2), &:nth-child(4) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                right: -66px;
+                                width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .work {
+        & .caption {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .work {
+        &__hard-items {
+            & > div {
+                margin-bottom: 50px;
+
+                &:first-child, &:nth-child(3) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                               content: none;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2), &:nth-child(4) {
+                    & .hard-item {
+                        &__number-wrap {
+                            &::before {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+
+
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
